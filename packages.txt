@@ -1,0 +1,4 @@
+libreoffice
+poppler-utils
+nodejs
+texlive
