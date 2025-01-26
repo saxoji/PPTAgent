@@ -53,7 +53,7 @@ STAGES = [
 NUM_MODELS = 1 if len(sys.argv) == 1 else int(sys.argv[1])
 NUM_INSTANCES_PER_MODEL = 4
 DEVICE_COUNT = torch.cuda.device_count()
-REFINE_TEMPLATE = Template(open("prompts/document_refine.txt").read())
+REFINE_TEMPLATE = Template(open(os.path.join(os.environ['PROMPTS_DIR'], "document_refine.txt")).read())
 
 # models
 text_models = [
